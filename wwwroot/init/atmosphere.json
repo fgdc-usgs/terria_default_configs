@@ -1,695 +1,1476 @@
 {
-	"catalog": [
-		{
-		"name": "Atmosphere",
-		"description": "<iframe id='embeddedpressure' src='https://climate-amerigeoss.hub.arcgis.com/pages/ecv-pressure' width='1024' height='768'></iframe>",
-		"type": "group",
-		"items": [
-				{
-					"name":"Earth Radiation Budget",
-					"type":"group",
-					"items":[
-						{
-							"name": "Longwave Radiation",
-							"type": "group",
-							"items":[
-								{
-									"name":"Energy and Temperature",
-									"type":"group",
-									"items":[
-										{
-											"name": "Outgoing Longwave Radiation (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Day"
-										}, 
-										{
-											"name": "Outgoing Longwave Radiation (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Monthly_Day"
-										}, 
-										{
-											"name": "Outgoing Longwave Radiation (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Night"
-										}, 
-										{
-											"name": "Outgoing Longwave Radiation (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Monthly_Night"
-										}
-									]
-								}
-							]	
-						}
-					]
-				},
-				{
-					"name": "Upper-Air",
-					"type": "group",
-					"items": [
-						{
-							"name": "Lightning",
-							"type": "group",
-							"items": [
-								{
-									"name": "Physical Properties",
-									"type": "group",
-									"items": [
-										{
-											"name": "Air Temperature (46 hPa, Day, MLS, Aura)+DA26:A33",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MLS_Temperature_46hPa_Day"
-										}, 
-										{
-											"name": "Air Temperature (46 hPa, Night, MLS, Aura)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MLS_Temperature_46hPa_Night"
-										}, 
-										{
-											"name": "Air Temperature (Monthly, Near Surface, Noah LSM, Best Available, GLDAS)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "GLDAS_Near_Surface_Air_Temperature_Monthly"
-										}, 
-										{
-											"name": "Air Temperature (Monthly, Near Surface, Primary Forcing Data, Best Available, NLDAS)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "NLDAS_Near_Surface_Air_Temperature_Primary_Monthly"
-										}, 
-										{
-											"name": "Air Temperature at 250hPa (Monthly, MERRA2)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MERRA2_Air_Temperature_250hPa_Monthly"
-										}, 
-										{
-											"name": "Air Temperature at Surface (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day"
-										}, 
-										{
-											"name": "Air Temperature at Surface (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Surface_Air_Temperature_Monthly_Day"
-										}, 
-										{
-											"name": "Air Temperature at Surface (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night"
-										}, 
-										{
-											"name": "Air Temperature at Surface (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Surface_Air_Temperature_Monthly_Night"
-										}, 
-										{
-											"name": "DMSP-F10 OLS Digital Dervied Lightning (OLS / DMSP-F10)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"OLS_DMSP_F10_Digital_Derived_Lightning"
-										}, 
-										{
-											"name": "DMSP-F12 OLS Digital Dervied Lightning (OLS / DMSP-F12)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"OLS_DMSP_F12_Digital_Derived_Lightning"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"name": "Wind Speed",
-					"type": "group",
-					"items": [
-						{
-							"name": "Wind Speed (Best Available, Day, AMSRU2, GCOM-W1)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"AMSRU2_Wind_Speed_Day"
-						},
-						{
-							"name": "Wind Speed (Best Available, Night, AMSRU2, GCOM-W1)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"AMSRU2_Wind_Speed_Night"
-						},
-						{
-							"name": "Wind Speed (Day, AMSR2, GCOM-W1)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"AMSR2_Wind_Speed_Day"
-						},
-						{
-							"name": "Wind Speed (L3, 7-Day Snapshot, SAC-D, Aquarius)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"Aquarius_Wind_Speed_L3_7Day_Snapshot"
-						},
-						{
-							"name": "Wind Speed (L3, Daily, Best Available, CYGNSS / DDMI)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"CYGNSS_L3_Wind_Speed_Daily"
-						},
-						{
-							"name": "Wind Speed (L3, Daily, Best Available, CYGNSS / DDMI)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"CYGNSS_L3_Wind_Speed_SDR_Daily"
-						},
-						{
-							"name": "Wind Speed (L3, Daily, SAC-D, Aquarius)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"Aquarius_Wind_Speed_L3_Daily"
-						},
-						{
-							"name": "Wind Speed (Meridional, Monthly, Best Available, CCMP)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"CCMP_REMSS_Meridional_Wind_Speed_Monthly"
-						},
-						{
-							"name": "Wind Speed (Night, AMSR2, GCOM-W1)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"AMSR2_Wind_Speed_Night"
-						},
-						{
-							"name": "Wind Speed (Scalar, Monthly, Best Available, CCMP)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"CCMP_REMSS_Scalar_Wind_Speed_Monthly"
-						},
-						{
-							"name": "Wind Speed (Zonal, Monthly, Best Available, CCMP)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"CCMP_REMSS_Zonal_Wind_Speed_Monthly"
-						},
-						{
-							"name": "Wind Speed over Ice-Free Oceans (Monthly, Average, Merged Microwave Radiometers)",
-							"type":"wms", 
-							"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-							"layers":"RSS_Merged_Wind_Climatology_Monthly"
-						}
-					]
-				},
-				{
-					"name": "Atmospheric Composition",
-					"type": "group",
-					"items": [
-						{
-							"name": "Aerosol",
-							"type": "group",
-							"items": [
-								{
-									"name": "Physical Properties",
-									"type": "group",
-									"items": [
-										{
-											"name": "Aerosol optical depth",
-											"type": "group",
-											"items": [
-												{
-													"name": "Aerosol Index (PyroCumuloNimbus, OMPS, Suomi NPP)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "OMPS_Aerosol_Index_PyroCumuloNimbus"
-												},
-												{
-													"name": "Aerosol Optical Depth (3km, MODIS, Aqua)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "MODIS_Aqua_Aerosol_Optical_Depth_3km"
-												},
-												{
-													"name": "Aerosol Optical Depth (3km, MODIS, Terra)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "MODIS_Terra_Aerosol_Optical_Depth_3km"
-												},
-												{
-													"name": "Aerosol Optical Depth (Absorbing, Multi-Wavelength, 388.0 nm, OMI, Aura)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "OMI_Absorbing_Aerosol_Optical_Thickness_MW_388"
-												},
-												{
-													"name": "Aerosol Optical Depth (OMI, Aura)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "OMI_Aerosol_Optical_Depth"
-												},
-												{
-													"name": "Aerosol Optical Depth (Value Added, MODIS, Combined Aqua and Terra)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "MODIS_Combined_Value_Added_AOD"
-												},
-												{
-													"name": "Aerosol Optical Depth Analysis (Monthly, MERRA2)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "MERRA2_Aerosol_Optical_Depth_Analysis_Monthly"
-												},
-												{
-													"name": "Aerosol Optical Depth Average (Green, Monthly, MISR)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "MISR_Aerosol_Optical_Depth_Avg_Green_Monthly"
-												},
-												{
-													"name": "Aerosol Optical Depth, Absorbing (OMI, Aura)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "OMI_Absorbing_Aerosol_Optical_Depth"
-												},
-												{
-													"name": "Aerosol Optical Thickness 550nm (Daily, SWDB)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "SWDB_Aerosol_Optical_Thickness_550nm_Daily"
-												},
-												{
-													"name": "Aerosol Optical Thickness 550nm (Monthly, SWDB)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "SWDB_Aerosol_Optical_Thickness_550nm_Monthly"
-												}
-											]
-										},
-										{
-											"name": "Aerosol Scattering Albedo",
-											"type": "group",
-											"items": [
-												{
-													"name": "Aerosol Single Scattering Albedo (Near-UV, 388.0nm, OMI, Aura)",
-													"type": "wms",
-													"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-													"layers": "OMI_Single_Scattering_Albedo"
-												}
-
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"name": "Green House Gases",
-							"type": "group",
-							"items": [
-								{
-									"name": "Carbon cycle and other GHGs",
-									"type": "group",
-									"items": [
-										{
-											"name": "Carbon Dioxide (Difference from Global Mean, Best Available, OCO-2)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "OCO-2_Carbon_Dioxide_Global_Mean_Difference"
-										}, 
-										{
-											"name": "Carbon Dioxide (Difference from Global Mean, Best Available, OCO-3)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "OCO-3_Carbon_Dioxide_Global_Mean_Difference"
-										}, 
-										{
-											"name": "Carbon Dioxide (Total Column Average, Best Available, OCO-2)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "OCO-2_Carbon_Dioxide_Total_Column_Average"
-										}, 
-										{
-											"name": "Carbon Dioxide (Total Column Average, Best Available, OCO-3)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "OCO-3_Carbon_Dioxide_Total_Column_Average"
-										}, 
-										{
-											"name": "Carbon Monoxide (215 hPa, Day, MLS, Aura)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MLS_CO_215hPa_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (215 hPa, Night, MLS, Aura)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MLS_CO_215hPa_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide (Daily, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Daily_Surface_Mixing_Ratio_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (Daily, Day, Total Column, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Daily_Total_Column_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (Daily, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Daily_Surface_Mixing_Ratio_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide (Daily, Night, Total Column, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Daily_Total_Column_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide (L2, 500hPa, Day, v6, Near Real-Time, AIRS, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L2_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (L2, 500hPa, Night, v6, Near Real-Time, AIRS, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L2_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide (L2, Daily, Total Column, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Daily_Total_Column_L2"
-										}, 
-										{
-											"name": "Carbon Monoxide (Monthly, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (Monthly, Day, Total Column, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Monthly_Total_Column_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide (Monthly, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide (Monthly, Night, Total Column, Best Available, MOPITT, Terra)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MOPITT_CO_Monthly_Total_Column_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide Emission (Monthly, MERRA2)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "MERRA2_Carbon_Monoxide_Emission_Monthly"
-										}, 
-										{
-											"name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Daily_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Monthly_Day"
-										}, 
-										{
-											"name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Daily_Night"
-										}, 
-										{
-											"name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, v6, Standard, Monthly, AIRS+AMSU, Aqua)",
-											"type": "wms",
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Monthly_Night"
-										}
-									]
-								}
-							]
-						},
-						{
-							"name": "Cloud",
-							"type": "group",
-							"items": [
-								{
-									"name":"Hydrosphere",
-									"type": "group",
-									"items": [	
-										{
-											"name": "Cloud Optical Thickness (1.6µm, Best Available, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness_16"
-										},
-										{
-											"name": "Cloud Optical Thickness (1.6µm, Best Available, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness_16"
-										},
-										{
-											"name": "Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness_16_PCL"
-										},
-										{
-											"name": "Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness_16_PCL"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness_1621"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness_1621"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness_PCL_1621"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness_PCL_1621"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, PCL, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Optical_Thickness_PCL"
-										},
-										{
-											"name": "Cloud Optical Thickness (2.1µm, PCL, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Optical_Thickness_PCL"
-										},
-										{
-											"name": "Cloud Optical Thickness (Best Available, VIIRS, SNPP)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"VIIRS_SNPP_Cloud_Optical_Thickness"
-										},
-										{
-											"name": "Cloud Phase (Infrared, Day, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Phase_Infrared_Day"
-										},
-										{
-											"name": "Cloud Phase (Infrared, Day, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Phase_Infrared_Day"
-										},
-										{
-											"name": "Cloud Phase (Infrared, Night, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Phase_Infrared_Night"
-										},
-										{
-											"name": "Cloud Phase (Infrared, Night, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Phase_Infrared_Night"
-										},
-										{
-											"name": "Cloud Phase Optical Properties (MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Phase_Optical_Properties"
-										},
-										{
-											"name": "Cloud Phase Optical Properties (MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Phase_Optical_Properties"
-										},
-										{
-											"name": "Cloud Pressure (OMI, Aura)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"OMI_Cloud_Pressure"
-										},
-										{
-											"name": "Cloud Stereo Height (No Wind Correction, 1.5 - 2.0 km, Monthly, MISR)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MISR_Cloud_Stereo_Height_Histogram_Bin_0.5km_Monthly"
-										},
-										{
-											"name": "Cloud Stereo Height (No Wind Correction, &lt; 0.5 km, Monthly, MISR)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MISR_Cloud_Stereo_Height_Histogram_Bin_1.5-2.0km_Monthly"
-										},
-										{
-											"name": "Cloud Top Height (Day, Best Available, VIIRS, SNPP)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"VIIRS_SNPP_Cloud_Top_Height_Day"
-										},
-										{
-											"name": "Cloud Top Height (Day, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Top_Height_Day"
-										},
-										{
-											"name": "Cloud Top Height (Day, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Top_Height_Day"
-										},
-										{
-											"name": "Cloud Top Height (L2, Day, Daily, v6, Near Real-Time, AIRS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"AIRS_L2_Cloud_Top_Height_Day"
-										},
-										{
-											"name": "Cloud Top Height (L2, Night, Daily, v6, Near Real-Time, AIRS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"AIRS_L2_Cloud_Top_Height_Night"
-										},									{
-											"name": "Cloud Top Height (Night, Best Available, VIIRS, SNPP)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"VIIRS_SNPP_Cloud_Top_Height_Night"
-										},
-										{
-											"name": "Cloud Top Height (Night, MODIS, Aqua)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Aqua_Cloud_Top_Height_Night"
-										},
-										{
-											"name": "Cloud Top Height (Night, MODIS, Terra)",
-											"type":"wms", 
-											"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-											"layers":"MODIS_Terra_Cloud_Top_Height_Night"
-										}
-									]
-								}
-							]
-						},
-						{
-							"name": "Carbon Dioxide",
-							"type": "group",
-							"items": [
-								{
-									"name": "Mole Fraction of Carbon Dioxide in Free Troposphere (L3, Monthly, AIRS+AMSU, Aqua)",
-									"type":"wms", 
-									"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-									"layers":"AIRS_L3_Carbon_Dioxide_AIRS_AMSU_Monthly"
-								},
-								{
-									"name": "Mole Fraction of Carbon Dioxide in Free Troposphere (L3, Monthly, IR-only, Aqua)",
-									"type":"wms", 
-									"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-									"layers":"AIRS_L3_Carbon_Dioxide_IR_Monthly"
-								}
-							]
-						},
-						{
-							"name": "Ozone",
-							"type": "group",
-							"items": [
-								{
-									"name": "Ozone (DOAS, v3, Standard, OMI, Aura)",
-									"type":"wms", 
-									"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-									"layers":"OMI_Ozone_DOAS_Total_Column"
-								},
-								{
-									"name": "Ozone (OMPS, Suomi NPP)",
-									"type":"wms", 
-									"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-									"layers":"OMPS_Ozone_Total_Column"
-								},
-								{
-									"name": "Ozone (TOMS-Like, v3, Standard, OMI, Aura)",
-									"type":"wms", 
-									"url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
-									"layers":"OMI_Ozone_TOMS_Total_Column"
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "BPAr1B",
+      "type": "group",
+      "name": "Atmosphere",
+      "members": [
+        {
+          "id": "MaUIc8",
+          "type": "group",
+          "name": "Earth Radiation Budget",
+          "members": [
+            {
+              "id": "kIKnuf",
+              "type": "group",
+              "name": "Longwave Radiation",
+              "members": [
+                {
+                  "id": "3DQRnQ",
+                  "type": "group",
+                  "name": "Energy and Temperature",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Outgoing Longwave Radiation (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Day",
+                      "id": "e5vAfG",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation/Energy and Temperature/Outgoing Longwave Radiation (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Outgoing Longwave Radiation (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Monthly_Day",
+                      "id": "II5Ip8",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation/Energy and Temperature/Outgoing Longwave Radiation (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Outgoing Longwave Radiation (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Night",
+                      "id": "ygX2cq",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation/Energy and Temperature/Outgoing Longwave Radiation (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Outgoing Longwave Radiation (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Monthly_Night",
+                      "id": "yVg7X2",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation/Energy and Temperature/Outgoing Longwave Radiation (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation/Energy and Temperature"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Earth Radiation Budget/Longwave Radiation"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Atmosphere/Earth Radiation Budget"
+          ]
+        },
+        {
+          "id": "QNn7PD",
+          "type": "group",
+          "name": "Upper-Air",
+          "members": [
+            {
+              "id": "ZR413Q",
+              "type": "group",
+              "name": "Lightning",
+              "members": [
+                {
+                  "id": "x1HbcS",
+                  "type": "group",
+                  "name": "Physical Properties",
+                  "members": [
+                    {
+                      "id": "uSMr2Y",
+                      "type": "group",
+                      "name": "Number of Lightnings",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature (46 hPa, Day, MLS, Aura)+DA26:A33",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MLS_Temperature_46hPa_Day",
+                          "id": "SETNpW",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature (46 hPa, Day, MLS, Aura)+DA26:A33"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature (46 hPa, Night, MLS, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MLS_Temperature_46hPa_Night",
+                          "id": "Ucq3Mq",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature (46 hPa, Night, MLS, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature (Monthly, Near Surface, Noah LSM, Best Available, GLDAS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "GLDAS_Near_Surface_Air_Temperature_Monthly",
+                          "id": "Ikrlel",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature (Monthly, Near Surface, Noah LSM, Best Available, GLDAS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature (Monthly, Near Surface, Primary Forcing Data, Best Available, NLDAS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "NLDAS_Near_Surface_Air_Temperature_Primary_Monthly",
+                          "id": "RdFRvz",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature (Monthly, Near Surface, Primary Forcing Data, Best Available, NLDAS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature at 250hPa (Monthly, MERRA2)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MERRA2_Air_Temperature_250hPa_Monthly",
+                          "id": "c5NN4B",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature at 250hPa (Monthly, MERRA2)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature at Surface (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+                          "id": "sVTJpN",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature at Surface (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature at Surface (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Surface_Air_Temperature_Monthly_Day",
+                          "id": "ntNKlP",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature at Surface (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature at Surface (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+                          "id": "2cPW3T",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature at Surface (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Air Temperature at Surface (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Surface_Air_Temperature_Monthly_Night",
+                          "id": "wzgwL1",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings/Air Temperature at Surface (L3, Nighttime/Descending, Monthly, AIRS+AMSU, Aqua)"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties/Number of Lightnings"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Upper-Air/Lightning/Physical Properties"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Upper-Air/Lightning"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Atmosphere/Upper-Air"
+          ]
+        },
+        {
+          "id": "VV25v2",
+          "type": "group",
+          "name": "Atmospheric Composition",
+          "members": [
+            {
+              "id": "Ixpkci",
+              "type": "group",
+              "name": "Aerosol",
+              "members": [
+                {
+                  "id": "4EyFpg",
+                  "type": "group",
+                  "name": "Physical Properties",
+                  "members": [
+                    {
+                      "id": "ERQAbt",
+                      "type": "group",
+                      "name": "Aerosol optical depth",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Index (PyroCumuloNimbus, OMPS, Suomi NPP)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMPS_Aerosol_Index_PyroCumuloNimbus",
+                          "id": "Ml4f4y",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Index (PyroCumuloNimbus, OMPS, Suomi NPP)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth (3km, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Aerosol_Optical_Depth_3km",
+                          "id": "leQwqX",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth (3km, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth (3km, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Aerosol_Optical_Depth_3km",
+                          "id": "KdXw7D",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth (3km, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth (Absorbing, Multi-Wavelength, 388.0 nm, OMI, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMI_Absorbing_Aerosol_Optical_Thickness_MW_388",
+                          "id": "5h3pTV",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth (Absorbing, Multi-Wavelength, 388.0 nm, OMI, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth (OMI, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMI_Aerosol_Optical_Depth",
+                          "id": "IRhz8i",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth (OMI, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth (Value Added, MODIS, Combined Aqua and Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Combined_Value_Added_AOD",
+                          "id": "Xj3XEF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth (Value Added, MODIS, Combined Aqua and Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth Analysis (Monthly, MERRA2)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MERRA2_Aerosol_Optical_Depth_Analysis_Monthly",
+                          "id": "zrMIq7",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth Analysis (Monthly, MERRA2)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth Average (Green, Monthly, MISR)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MISR_Aerosol_Optical_Depth_Avg_Green_Monthly",
+                          "id": "RYAzrB",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth Average (Green, Monthly, MISR)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Depth, Absorbing (OMI, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMI_Absorbing_Aerosol_Optical_Depth",
+                          "id": "Nd3NkF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Depth, Absorbing (OMI, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Thickness 550nm (Daily, SWDB)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SWDB_Aerosol_Optical_Thickness_550nm_Daily",
+                          "id": "fCRiJR",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Thickness 550nm (Daily, SWDB)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Optical Thickness 550nm (Monthly, SWDB)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SWDB_Aerosol_Optical_Thickness_550nm_Monthly",
+                          "id": "jpFcDj",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth/Aerosol Optical Thickness 550nm (Monthly, SWDB)"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol optical depth"
+                      ]
+                    },
+                    {
+                      "id": "SwXu1C",
+                      "type": "group",
+                      "name": "Aerosol Scattering Albedo",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Aerosol Single Scattering Albedo (Near-UV, 388.0nm, OMI, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMI_Single_Scattering_Albedo",
+                          "id": "Vkkdqi",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol Scattering Albedo/Aerosol Single Scattering Albedo (Near-UV, 388.0nm, OMI, Aura)"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties/Aerosol Scattering Albedo"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Atmospheric Composition/Aerosol/Physical Properties"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Atmospheric Composition/Aerosol"
+              ]
+            },
+            {
+              "id": "mstGd5",
+              "type": "group",
+              "name": "Green House Gases",
+              "members": [
+                {
+                  "id": "5TuGit",
+                  "type": "group",
+                  "name": "Carbon Dioxide",
+                  "members": [
+                    {
+                      "id": "hzveeE",
+                      "type": "group",
+                      "name": "Carbon cycle and other GHGs",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Carbon Dioxide (Difference from Global Mean, Best Available, OCO-2)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OCO-2_Carbon_Dioxide_Global_Mean_Difference",
+                          "id": "VuUwXt",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Dioxide (Difference from Global Mean, Best Available, OCO-2)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Dioxide (Difference from Global Mean, Best Available, OCO-3)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OCO-3_Carbon_Dioxide_Global_Mean_Difference",
+                          "id": "gbluD4",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Dioxide (Difference from Global Mean, Best Available, OCO-3)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Dioxide (Total Column Average, Best Available, OCO-2)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OCO-2_Carbon_Dioxide_Total_Column_Average",
+                          "id": "H5SIJq",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Dioxide (Total Column Average, Best Available, OCO-2)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Dioxide (Total Column Average, Best Available, OCO-3)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OCO-3_Carbon_Dioxide_Total_Column_Average",
+                          "id": "CkCxhH",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Dioxide (Total Column Average, Best Available, OCO-3)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (215 hPa, Day, MLS, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MLS_CO_215hPa_Day",
+                          "id": "gMQI37",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (215 hPa, Day, MLS, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (215 hPa, Night, MLS, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MLS_CO_215hPa_Night",
+                          "id": "IMtEw6",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (215 hPa, Night, MLS, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Daily, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Daily_Surface_Mixing_Ratio_Day",
+                          "id": "sQLucb",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Daily, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Daily, Day, Total Column, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Daily_Total_Column_Day",
+                          "id": "Ic7X32",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Daily, Day, Total Column, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Daily, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Daily_Surface_Mixing_Ratio_Night",
+                          "id": "MYE4dL",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Daily, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Daily, Night, Total Column, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Daily_Total_Column_Night",
+                          "id": "LPigiQ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Daily, Night, Total Column, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (L2, 500hPa, Day, v6, Near Real-Time, AIRS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L2_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Day",
+                          "id": "PaXgjH",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (L2, 500hPa, Day, v6, Near Real-Time, AIRS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (L2, 500hPa, Night, v6, Near Real-Time, AIRS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L2_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Night",
+                          "id": "z21DVZ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (L2, 500hPa, Night, v6, Near Real-Time, AIRS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (L2, Daily, Total Column, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Daily_Total_Column_L2",
+                          "id": "TT52LS",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (L2, Daily, Total Column, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Monthly, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day",
+                          "id": "sGBTkA",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Monthly, Day, Surface Mixing Ratio, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Monthly, Day, Total Column, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Monthly_Total_Column_Day",
+                          "id": "FqkLLe",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Monthly, Day, Total Column, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Monthly, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Night",
+                          "id": "prGYfq",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Monthly, Night, Surface Mixing Ratio, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide (Monthly, Night, Total Column, Best Available, MOPITT, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MOPITT_CO_Monthly_Total_Column_Night",
+                          "id": "tJ5J5i",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide (Monthly, Night, Total Column, Best Available, MOPITT, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide Emission (Monthly, MERRA2)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MERRA2_Carbon_Monoxide_Emission_Monthly",
+                          "id": "KxhnGm",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide Emission (Monthly, MERRA2)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Daily_Day",
+                          "id": "iiuNEb",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Daily, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Monthly_Day",
+                          "id": "ajtDfk",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Daytime/Ascending, Monthly, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Daily_Night",
+                          "id": "myvvuK",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, Daily, AIRS+AMSU, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, v6, Standard, Monthly, AIRS+AMSU, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L3_Carbon_Monoxide_500hPa_Volume_Mixing_Ratio_Monthly_Night",
+                          "id": "BAWvAM",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs/Carbon Monoxide Volume Mixing Ratio at 500hPa (L3, Nighttime/Descending, v6, Standard, Monthly, AIRS+AMSU, Aqua)"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide/Carbon cycle and other GHGs"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Atmospheric Composition/Green House Gases/Carbon Dioxide"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Atmospheric Composition/Green House Gases"
+              ]
+            },
+            {
+              "id": "NZpqx3",
+              "type": "group",
+              "name": "Cloud",
+              "members": [
+                {
+                  "id": "ha8Pxv",
+                  "type": "group",
+                  "name": "Carbon Dioxide",
+                  "members": [
+                    {
+                      "id": "5nikD8",
+                      "type": "group",
+                      "name": "Carbon cycle and other GHGs",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (1.6µm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_16",
+                          "id": "ewzRAU",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (1.6µm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (1.6µm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_16",
+                          "id": "8WAgzF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (1.6µm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (1.6µm, PCL, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_16_PCL",
+                          "id": "8bt5p7",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (1.6µm, PCL, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (1.6µm, PCL, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_16_PCL",
+                          "id": "8rv7Pb",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (1.6µm, PCL, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, 1621 Algorithm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_1621",
+                          "id": "ImJRYA",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, 1621 Algorithm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, 1621 Algorithm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_1621",
+                          "id": "fpmzlv",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, 1621 Algorithm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius",
+                          "id": "K2DEMF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius",
+                          "id": "Llip7D",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_PCL_1621",
+                          "id": "aj7Wpb",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_PCL_1621",
+                          "id": "A828MD",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, PCL, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_PCL",
+                          "id": "qLLdaA",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, PCL, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (2.1µm, PCL, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_PCL",
+                          "id": "z5HmkD",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (2.1µm, PCL, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (3.7µm, PCL, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_37_PCL",
+                          "id": "mClNAL",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (3.7µm, PCL, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (3.7µm, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_37",
+                          "id": "55ycPl",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (3.7µm, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (3.7µm, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Effective_Radius_37",
+                          "id": "tXjTDQ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (3.7µm, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (3.7µm, PCL, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Effective_Radius_37_PCL",
+                          "id": "an4dcv",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (3.7µm, PCL, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Effective Radius (Best Available, VIIRS, SNPP)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "VIIRS_SNPP_Cloud_Effective_Radius",
+                          "id": "6Q5l5X",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Effective Radius (Best Available, VIIRS, SNPP)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Fraction (Day, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Fraction_Day",
+                          "id": "vRVfLF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Fraction (Day, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Fraction (Day, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Fraction_Day",
+                          "id": "ExuPLj",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Fraction (Day, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Fraction (Night, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Fraction_Night",
+                          "id": "HmeQT3",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Fraction (Night, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Fraction (Night, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Fraction_Night",
+                          "id": "M4d63r",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Fraction (Night, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local AM, DMSP-F8 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F8_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "iReFp7",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local AM, DMSP-F8 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F10 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F10_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "s1SESv",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F10 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F11 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F11_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "t65rA4",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F11 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F13 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F13_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "zerbpi",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F13 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F14 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F14_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "KlpqHp",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F14 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F15 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F15_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "8pleKS",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F15 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F16 / SSMIS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F16_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "Ege4YU",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F16 / SSMIS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Ascending, Local PM, DMSP-F17 / SSMIS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F17_Cloud_Liquid_Water_Over_Oceans_Ascending",
+                          "id": "8rUum8",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Ascending, Local PM, DMSP-F17 / SSMIS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F10 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F10_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "vwwAFe",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F10 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F11 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F11_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "XbAnqT",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F11 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F13 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F13_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "6H7zsN",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F13 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F14 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F14_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "cWeHvr",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F14 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F15 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F15_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "PEVXhL",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F15 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F16 / SSMIS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F16_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "q261KJ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F16 / SSMIS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local AM, DMSP-F17 / SSMIS)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F17_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "NS8i6X",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local AM, DMSP-F17 / SSMIS)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Liquid Water (Descending, Local PM, DMSP-F8 / SSMI)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "SSMI_DMSP_F8_Cloud_Liquid_Water_Over_Oceans_Descending",
+                          "id": "TsVAcN",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Liquid Water (Descending, Local PM, DMSP-F8 / SSMI)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Multi Layer Flag (MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Multi_Layer_Flag",
+                          "id": "en3d1f",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Multi Layer Flag (MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Multi Layer Flag (MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Multi_Layer_Flag",
+                          "id": "5EQmTq",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Multi Layer Flag (MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Pressure (Day, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Pressure_Day",
+                          "id": "1JU4P6",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Pressure (Day, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Pressure (Day, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Pressure_Day",
+                          "id": "n2iP48",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Pressure (Day, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Pressure (Night, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Pressure_Night",
+                          "id": "RxrmVi",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Pressure (Night, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Pressure (Night, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Pressure_Night",
+                          "id": "e7ZQle",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Pressure (Night, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Temperature (Day, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Temp_Day",
+                          "id": "3be3fz",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Temperature (Day, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Temperature (Day, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Temp_Day",
+                          "id": "7p8lQw",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Temperature (Day, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Temperature (Night, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Temp_Night",
+                          "id": "RvsMDu",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Temperature (Night, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Temperature (Night, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Temp_Night",
+                          "id": "G1NDpQ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Temperature (Night, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Water Path (MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Water_Path",
+                          "id": "63QlYr",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Water Path (MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Water Path (MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Water_Path",
+                          "id": "v5Yc7q",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Water Path (MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Water Path (PCL, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Water_Path_PCL",
+                          "id": "4fI7T4",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Water Path (PCL, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Water Path (PCL, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Water_Path_PCL",
+                          "id": "s4cLQs",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Water Path (PCL, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (1.6µm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness_16",
+                          "id": "gR3fhl",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (1.6µm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (1.6µm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness_16",
+                          "id": "xYmdL2",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (1.6µm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness_16_PCL",
+                          "id": "v77VDd",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness_16_PCL",
+                          "id": "7Ss4ak",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (1.6µm, PCL, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness_1621",
+                          "id": "sVwrw6",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness_1621",
+                          "id": "ghNfbG",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, 1621 Algorithm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness",
+                          "id": "LWHhEt",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness",
+                          "id": "3BSWKs",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness_PCL_1621",
+                          "id": "xXMerC",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness_PCL_1621",
+                          "id": "3cthL4",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, PCL, 1621 Algorithm, Best Available, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, PCL, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Optical_Thickness_PCL",
+                          "id": "2AxJXJ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, PCL, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (2.1µm, PCL, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Optical_Thickness_PCL",
+                          "id": "F8Ane7",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (2.1µm, PCL, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Optical Thickness (Best Available, VIIRS, SNPP)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "VIIRS_SNPP_Cloud_Optical_Thickness",
+                          "id": "7AU5c8",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Optical Thickness (Best Available, VIIRS, SNPP)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase (Infrared, Day, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Phase_Infrared_Day",
+                          "id": "BXAex1",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase (Infrared, Day, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase (Infrared, Day, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Phase_Infrared_Day",
+                          "id": "KXmAbI",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase (Infrared, Day, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase (Infrared, Night, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Phase_Infrared_Night",
+                          "id": "aDcnH1",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase (Infrared, Night, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase (Infrared, Night, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Phase_Infrared_Night",
+                          "id": "qKUJmy",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase (Infrared, Night, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase Optical Properties (MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Phase_Optical_Properties",
+                          "id": "1sG8GT",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase Optical Properties (MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Phase Optical Properties (MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Phase_Optical_Properties",
+                          "id": "ydzCaQ",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Phase Optical Properties (MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Pressure (OMI, Aura)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "OMI_Cloud_Pressure",
+                          "id": "zd8jgF",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Pressure (OMI, Aura)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Stereo Height (No Wind Correction, 1.5 - 2.0 km, Monthly, MISR)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MISR_Cloud_Stereo_Height_Histogram_Bin_0.5km_Monthly",
+                          "id": "3ZDRpR",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Stereo Height (No Wind Correction, 1.5 - 2.0 km, Monthly, MISR)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Stereo Height (No Wind Correction, &lt; 0.5 km, Monthly, MISR)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MISR_Cloud_Stereo_Height_Histogram_Bin_1.5-2.0km_Monthly",
+                          "id": "cWPGW2",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Stereo Height (No Wind Correction, &lt; 0.5 km, Monthly, MISR)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Day, Best Available, VIIRS, SNPP)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "VIIRS_SNPP_Cloud_Top_Height_Day",
+                          "id": "tPICsx",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Day, Best Available, VIIRS, SNPP)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Day, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Height_Day",
+                          "id": "YjzKSc",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Day, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Day, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Height_Day",
+                          "id": "XFmiGw",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Day, MODIS, Terra)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (L2, Day, Daily, v6, Near Real-Time, AIRS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L2_Cloud_Top_Height_Day",
+                          "id": "YBYsIh",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (L2, Day, Daily, v6, Near Real-Time, AIRS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (L2, Night, Daily, v6, Near Real-Time, AIRS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "AIRS_L2_Cloud_Top_Height_Night",
+                          "id": "BRBW7s",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (L2, Night, Daily, v6, Near Real-Time, AIRS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Night, Best Available, VIIRS, SNPP)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "VIIRS_SNPP_Cloud_Top_Height_Night",
+                          "id": "YADx3B",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Night, Best Available, VIIRS, SNPP)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Night, MODIS, Aqua)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Aqua_Cloud_Top_Height_Night",
+                          "id": "dP6ZLH",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Night, MODIS, Aqua)"
+                          ]
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Cloud Top Height (Night, MODIS, Terra)",
+                          "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                          "layers": "MODIS_Terra_Cloud_Top_Height_Night",
+                          "id": "J6iLF7",
+                          "shareKeys": [
+                            "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs/Cloud Top Height (Night, MODIS, Terra)"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide/Carbon cycle and other GHGs"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Atmospheric Composition/Cloud/Carbon Dioxide"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Atmospheric Composition/Cloud"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Atmosphere/Atmospheric Composition"
+          ]
+        }
+      ],
+      "description": "<iframe id='embeddedpressure' src='https://climate-amerigeoss.hub.arcgis.com/pages/ecv-pressure' width='1024' height='768'></iframe>",
+      "shareKeys": [
+        "Root Group/Atmosphere"
+      ]
+    }
+  ]
 }
