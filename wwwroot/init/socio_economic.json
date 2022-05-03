@@ -1,0 +1,98 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "Ddxd8C",
+      "type": "group",
+      "name": "Catalog",
+      "members": [
+        {
+          "id": "WDqYKh",
+          "type": "group",
+          "name": "Socio-Economic",
+          "members": [
+            {
+              "id": "iFwNBt",
+              "type": "group",
+              "name": "Population",
+              "members": [
+                {
+                  "id": "WgB7mV",
+                  "type": "group",
+                  "name": "Population Density",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Population Density (GPW, 2000)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GPW_Population_Density_2000",
+                      "id": "fyzJsP",
+                      "shareKeys": [
+                        "Root Group/Catalog/Socio-Economic/Population/Population Density/Population Density (GPW, 2000)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Population Density (GPW, 2005)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GPW_Population_Density_2005",
+                      "id": "euWZm6",
+                      "shareKeys": [
+                        "Root Group/Catalog/Socio-Economic/Population/Population Density/Population Density (GPW, 2005)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Population Density (GPW, 2010)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GPW_Population_Density_2010",
+                      "id": "nbv4lk",
+                      "shareKeys": [
+                        "Root Group/Catalog/Socio-Economic/Population/Population Density/Population Density (GPW, 2010)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Population Density (GPW, 2015)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GPW_Population_Density_2015",
+                      "id": "TmXHyP",
+                      "shareKeys": [
+                        "Root Group/Catalog/Socio-Economic/Population/Population Density/Population Density (GPW, 2015)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Population Density (GPW, 2020)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GPW_Population_Density_2020",
+                      "id": "TLWcfH",
+                      "shareKeys": [
+                        "Root Group/Catalog/Socio-Economic/Population/Population Density/Population Density (GPW, 2020)"
+                      ]
+                    }
+                  ],
+                  "description": "",
+                  "shareKeys": [
+                    "Root Group/Catalog/Socio-Economic/Population/Population Density"
+                  ]
+                }
+              ],
+              "description": "",
+              "shareKeys": [
+                "Root Group/Catalog/Socio-Economic/Population"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Catalog/Socio-Economic"
+          ]
+        }
+      ],
+      "description": "<p><img style='width: 400.4px;' src='https://data.amerigeoss.org/ameriterria-climaTerria/images/Climaterria1.png'>",
+      "shareKeys": [
+        "Root Group/Catalog"
+      ]
+    }
+  ]
+}
