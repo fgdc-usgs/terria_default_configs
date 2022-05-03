@@ -1,0 +1,455 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "Jr2snx",
+      "type": "group",
+      "name": "Atmosphere",
+      "members": [
+        {
+          "id": "4EtVBN",
+          "type": "group",
+          "name": "Surface",
+          "members": [
+            {
+              "id": "uFUVBW",
+              "type": "group",
+              "name": "Surface Precipitation",
+              "members": [
+                {
+                  "id": "DBzxle",
+                  "type": "group",
+                  "name": "Hydrosphere",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation (Day, Best Available, AMSRU2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRU2_Surface_Precipitation_Day",
+                      "id": "JpGyfX",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation (Day, Best Available, AMSRU2, GCOM-W1)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation (Night, Best Available, AMSRU2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRU2_Surface_Precipitation_Night",
+                      "id": "XKmYRU",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation (Night, Best Available, AMSRU2, GCOM-W1)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation Rate (Day, AMSR2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSR2_Surface_Precipitation_Rate_Day",
+                      "id": "rIsmar",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation Rate (Day, AMSR2, GCOM-W1)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation Rate (Day, Best Available, AMSR-E, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRE_Surface_Precipitation_Rate_Day",
+                      "id": "B2km7z",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation Rate (Day, Best Available, AMSR-E, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation Rate (Night, AMSR2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSR2_Surface_Precipitation_Rate_Night",
+                      "id": "4AYa6W",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation Rate (Night, AMSR2, GCOM-W1)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Precipitation Rate (Night, Best Available, AMSR-E, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRE_Surface_Precipitation_Rate_Night",
+                      "id": "v4xynP",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Surface Precipitation Rate (Night, Best Available, AMSR-E, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation (Day, AIRS, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_Precipitation_Day",
+                      "id": "TAqCMi",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation (Day, AIRS, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation (Night, AIRS, Aqua)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AIRS_Precipitation_Night",
+                      "id": "s5fb5x",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation (Night, AIRS, Aqua)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation Rate",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "IMERG_Precipitation_Rat",
+                      "id": "blBtsD",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation Rate"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation Rate (Ascending)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "TRMM_Precipitation_Rate_Asc",
+                      "id": "DpphK6",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation Rate (Ascending)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation Rate (Descending)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "TRMM_Precipitation_Rate_Dsc",
+                      "id": "PHBGpY",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation Rate (Descending)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation Total (Monthly, Surface, Primary Forcing Data, Best Available, NLDAS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
+                      "id": "nksm3u",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation Total (Monthly, Surface, Primary Forcing Data, Best Available, NLDAS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Precipitation Total (Monthly, Surface, Secondary Forcing Data, Best Available, NLDAS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "NLDAS_Surface_Total_Precipitation_Secondary_Monthly",
+                      "id": "YeD6ER",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Precipitation Total (Monthly, Surface, Secondary Forcing Data, Best Available, NLDAS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Total Precipitable Water Vapor (Monthly, MERRA2)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
+                      "id": "6nHdCQ",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Total Precipitable Water Vapor (Monthly, MERRA2)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Total Precipitation Bias Corrected (Monthly, MERRA2)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "MERRA2_Precipitation_Bias_Corrected_Monthly",
+                      "id": "vR8jDB",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Total Precipitation Bias Corrected (Monthly, MERRA2)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Total Precipitation Rate (Monthly, Surface, Noah LSM, Best Available, GLDAS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "GLDAS_Surface_Total_Precipitation_Rate_Monthly",
+                      "id": "5NJeDn",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Total Precipitation Rate (Monthly, Surface, Noah LSM, Best Available, GLDAS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Total Precpitable Water (Best Available, Day, AMSRU2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRU2_Total_Precipitable_Water_Day",
+                      "id": "ykPBlH",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Total Precpitable Water (Best Available, Day, AMSRU2, GCOM-W1)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Total Precpitable Water (Best Available, Night, AMSRU2, GCOM-W1)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "AMSRU2_Total_Precipitable_Water_Night",
+                      "id": "7aFupG",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere/Total Precpitable Water (Best Available, Night, AMSRU2, GCOM-W1)"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Surface/Surface Precipitation/Hydrosphere"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Surface/Surface Precipitation"
+              ]
+            },
+            {
+              "id": "PTUKcy",
+              "type": "group",
+              "name": "Surface Pressure",
+              "members": [
+                {
+                  "id": "1qnhGu",
+                  "type": "group",
+                  "name": "Physical Properties",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Surface Pressure (Monthly, MERRA2)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "MERRA_Surface_Pressure_Monthly",
+                      "id": "26wi2A",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Pressure/Physical Properties/Surface Pressure (Monthly, MERRA2)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Pressure (Monthly, MERRA)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "MERRA2_Surface_Pressure_Monthly",
+                      "id": "dSS4Ki",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Surface Pressure/Physical Properties/Surface Pressure (Monthly, MERRA)"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Surface/Surface Pressure/Physical Properties"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Surface/Surface Pressure"
+              ]
+            },
+            {
+              "id": "l2kukD",
+              "type": "group",
+              "name": "Wind Speed and Direction",
+              "members": [
+                {
+                  "id": "kjDu6z",
+                  "type": "group",
+                  "name": "Physical Properties",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local AM, DMSP-F8 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F8_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "2XwkpX",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local AM, DMSP-F8 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F10 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F10_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "T5JHu6",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F10 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F11 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F11_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "kvVrcd",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F11 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F13 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F13_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "Zr5J8P",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F13 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F14 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F14_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "hGrAtI",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F14 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F15 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F15_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "8ZgaIX",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F15 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F16 / SSMIS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F16_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "F1GibQ",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F16 / SSMIS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Ascending, Local PM, DMSP-F17 / SSMIS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F17_Wind_Speed_Over_Oceans_Ascending",
+                      "id": "Bgvt26",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Ascending, Local PM, DMSP-F17 / SSMIS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F10 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F10_Wind_Speed_Over_Oceans_Descending",
+                      "id": "x7J24u",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F10 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F11 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F11_Wind_Speed_Over_Oceans_Descending",
+                      "id": "uSTHsa",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F11 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F13 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F13_Wind_Speed_Over_Oceans_Descending",
+                      "id": "wK4kGH",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F13 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F14 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F14_Wind_Speed_Over_Oceans_Descending",
+                      "id": "DRxbcl",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F14 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F15 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F15_Wind_Speed_Over_Oceans_Descending",
+                      "id": "G8Md3L",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F15 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F16 / SSMIS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F16_Wind_Speed_Over_Oceans_Descending",
+                      "id": "jAMEt6",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F16 / SSMIS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local AM, DMSP-F17 / SSMIS)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F17_Wind_Speed_Over_Oceans_Descending",
+                      "id": "XMIWHn",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local AM, DMSP-F17 / SSMIS)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Descending, Local PM, DMSP-F8 / SSMI)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "SSMI_DMSP_F8_Wind_Speed_Over_Oceans_Descending",
+                      "id": "uRX8D5",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Descending, Local PM, DMSP-F8 / SSMI)"
+                      ]
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Surface Wind Speed (Monthly, MERRA2)",
+                      "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi",
+                      "layers": "MERRA2_Surface_Wind_Speed_Monthly",
+                      "id": "1FszFt",
+                      "shareKeys": [
+                        "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties/Surface Wind Speed (Monthly, MERRA2)"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Atmosphere/Surface/Wind Speed and Direction/Physical Properties"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Atmosphere/Surface/Wind Speed and Direction"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Atmosphere/Surface"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Atmosphere"
+      ]
+    }
+  ]
+}
