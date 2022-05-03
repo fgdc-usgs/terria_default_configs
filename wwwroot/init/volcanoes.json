@@ -1,0 +1,127 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "1PXMxq",
+      "type": "group",
+      "name": "Extreme Weather",
+      "members": [
+        {
+          "id": "vkgAZP",
+          "type": "group",
+          "name": "Disasters",
+          "members": [
+            {
+              "id": "5uDNNu",
+              "type": "group",
+              "name": "Volcano",
+              "members": [
+                {
+                  "id": "cnkRch",
+                  "type": "group",
+                  "name": "Preparedness",
+                  "members": [
+                    {
+                      "id": "krpCJ1",
+                      "type": "group",
+                      "name": "Assessment",
+                      "members": [
+                        {
+                          "id": "iDYpY1",
+                          "type": "group",
+                          "name": "Environment",
+                          "members": [
+                            {
+                              "type": "wms",
+                              "name": "Volcano Hazard Frequency and Distribution",
+                              "url": "https://sedac.ciesin.columbia.edu/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                              "layers": "ndh:ndh-volcano-hazard-frequency-distribution",
+                              "id": "t3RHqY",
+                              "shareKeys": [
+                                "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Environment/Volcano Hazard Frequency and Distribution"
+                              ]
+                            }
+                          ],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Environment"
+                          ]
+                        },
+                        {
+                          "id": "VD2wa1",
+                          "type": "group",
+                          "name": "Economic",
+                          "members": [
+                            {
+                              "type": "wms",
+                              "name": "Volcano Proportional Economic Loss Risk Deciles",
+                              "url": "https://sedac.ciesin.columbia.edu/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                              "layers": "ndh:ndh-volcano-proportional-economic-loss-risk-deciles",
+                              "id": "C65pHt",
+                              "shareKeys": [
+                                "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Economic/Volcano Proportional Economic Loss Risk Deciles"
+                              ]
+                            },
+                            {
+                              "type": "wms",
+                              "name": "Volcano Total Economic Loss Risk Deciles",
+                              "url": "https://sedac.ciesin.columbia.edu/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                              "layers": "ndh:ndh-volcano-total-economic-loss-risk-deciles",
+                              "id": "yJwqql",
+                              "shareKeys": [
+                                "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Economic/Volcano Total Economic Loss Risk Deciles"
+                              ]
+                            }
+                          ],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Economic"
+                          ]
+                        },
+                        {
+                          "id": "uqPIN8",
+                          "type": "group",
+                          "name": "Social",
+                          "members": [
+                            {
+                              "type": "wms",
+                              "name": "Volcano Mortality Risks and Distribution",
+                              "url": "https://sedac.ciesin.columbia.edu/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                              "layers": "ndh:ndh-volcano-mortality-risks-distribution",
+                              "id": "j6nYNz",
+                              "shareKeys": [
+                                "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Social/Volcano Mortality Risks and Distribution"
+                              ]
+                            }
+                          ],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment/Social"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Extreme Weather/Disasters/Volcano/Preparedness/Assessment"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Extreme Weather/Disasters/Volcano/Preparedness"
+                  ]
+                }
+              ],
+              "description": "",
+              "shareKeys": [
+                "Root Group/Extreme Weather/Disasters/Volcano"
+              ]
+            }
+          ],
+          "description": "",
+          "shareKeys": [
+            "Root Group/Extreme Weather/Disasters"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Extreme Weather"
+      ]
+    }
+  ]
+}
