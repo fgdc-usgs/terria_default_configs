@@ -1,0 +1,84 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "l38EKA",
+      "type": "group",
+      "name": "Extreme Weather",
+      "members": [
+        {
+          "id": "YWL1EX",
+          "type": "group",
+          "name": "Disasters",
+          "members": [
+            {
+              "id": "GrnbZt",
+              "type": "group",
+              "name": "Cyclone",
+              "members": [
+                {
+                  "id": "YZdUpw",
+                  "type": "group",
+                  "name": "Preparedness",
+                  "members": [
+                    {
+                      "id": "YRLgri",
+                      "type": "group",
+                      "name": "Assessment",
+                      "members": [
+                        {
+                          "id": "wUUlZY",
+                          "type": "group",
+                          "name": "Environment",
+                          "members": [],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Cyclone/Preparedness/Assessment/Environment"
+                          ]
+                        },
+                        {
+                          "id": "KU4Ahi",
+                          "type": "group",
+                          "name": "Economic",
+                          "members": [],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Cyclone/Preparedness/Assessment/Economic"
+                          ]
+                        },
+                        {
+                          "id": "7YdsyQ",
+                          "type": "group",
+                          "name": "Social",
+                          "members": [],
+                          "shareKeys": [
+                            "Root Group/Extreme Weather/Disasters/Cyclone/Preparedness/Assessment/Social"
+                          ]
+                        }
+                      ],
+                      "shareKeys": [
+                        "Root Group/Extreme Weather/Disasters/Cyclone/Preparedness/Assessment"
+                      ]
+                    }
+                  ],
+                  "shareKeys": [
+                    "Root Group/Extreme Weather/Disasters/Cyclone/Preparedness"
+                  ]
+                }
+              ],
+              "description": "",
+              "shareKeys": [
+                "Root Group/Extreme Weather/Disasters/Cyclone"
+              ]
+            }
+          ],
+          "description": "",
+          "shareKeys": [
+            "Root Group/Extreme Weather/Disasters"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Extreme Weather"
+      ]
+    }
+  ]
+}
